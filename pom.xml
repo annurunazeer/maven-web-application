@@ -29,6 +29,10 @@
 		-->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<properties>
+    		<maven.compiler.source>1.8</maven.compiler.source>
+   		<maven.compiler.target>1.8</maven.compiler.target>
+		</properties>
 
 	</properties>
 
@@ -129,11 +133,11 @@
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
 				</configuration>
-			</plugin>
-                       <plugin>
-  				<groupId>org.sonarsource.scanner.maven</groupId>
-  				<artifactId>sonar-maven-plugin</artifactId>
-  				<version>3.9.1.2184</version>
+			 </plugin>
+                      	 <plugin>
+    				<groupId>org.sonarsource.scanner.maven</groupId>
+    				<artifactId>sonar-maven-plugin</artifactId>
+    				<version>3.9.1.2184</version> <!-- Update this version -->
 			</plugin>
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
